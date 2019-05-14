@@ -1,0 +1,36 @@
+func double power(base : double, exponent : int) {
+	
+	var i : int = 0;
+	var result : double = 1;
+
+	if exponent > 0 {
+
+		while i < exponent {
+
+			result = result * base;
+			i = i + 1;
+		}
+	}
+
+	return result;
+}
+
+func void main() {
+
+	var exponent : string;
+	var base : string;
+	var exp : int;
+	var b : double;
+
+	cout("Enter a base: ");
+	base = cin();
+
+	cout("Enter a exponent: ");
+	exponent = cin();
+
+	Java "b = Double.parseDouble(base)";
+	Java "exp = Integer.parseInt(exponent)";
+	
+	cout("%.2f^%d = %.2f\n", b, exp, power(b, exp));
+
+}

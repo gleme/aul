@@ -1,0 +1,13 @@
+func void sayHello(name : string) {
+	cout("Hello, %s!\n", name);
+}
+
+func void main() {
+	
+	var name : string;
+	cout("Hi, I'm AUL.\nWhat's your name? ");
+	name = cin();
+
+	sayHello(name);
+}
+

@@ -1,0 +1,21 @@
+func int factorial(number : int) {
+	
+	var result : int = 1;
+	var i : int;
+	for i = 1; i < number; i = i + 1 {
+		result = result * (i + 1);
+	}
+
+	return result;
+}
+
+func void main() {
+
+	var num : int;
+	var input : string;
+	cout("Enter a number: ");
+	input = cin();
+	Java "num = Integer.parseInt(input)";
+
+	cout("%d! is %d.\n", num, factorial(num));
+}
